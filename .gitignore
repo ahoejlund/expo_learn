@@ -1,2 +1,6 @@
 # Git ignoring the qsub_logs subfolder
-qsub_logs 
+qsub_logs
+
+# ignoring other random files (i.e. .DS_Store and temp py-files)
+.DS_Store
+._* 
