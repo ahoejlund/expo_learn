@@ -1,0 +1,2 @@
+# Git ignoring the qsub_logs subfolder
+qsub_logs 
