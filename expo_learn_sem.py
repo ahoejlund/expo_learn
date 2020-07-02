@@ -76,10 +76,10 @@ for k, kind in enumerate(kinds):
         # print(target)
         target_epochs = epochs[target]
         # print(target_epochs.get_data(picks=['mag', 'grad']))
-        idx = np.arange(0, int(len(target_epochs)), int(np.round(len(target_epochs)/11)))
-        if (len(target_epochs) % 10) > 4:
+        idx = np.arange(0, int(len(target_epochs)), int(np.round(len(target_epochs)/12)))
+        if (len(target_epochs) % 11) > 4:
             idx = np.append(idx, len(target_epochs))
-        elif (len(target_epochs) % 10) > 0:
+        elif (len(target_epochs) % 11) > 0:
             idx[-1] = len(target_epochs)
         end_idx = idx[1:]
         start_idx = idx[0:-1]
